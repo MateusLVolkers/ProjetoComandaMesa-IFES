@@ -15,6 +15,8 @@ header {
 	height: 100px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
 
 header img {
@@ -22,13 +24,58 @@ header img {
 	width: 75px;
 }
 
+.links__div a {
+	text-decoration: none;
+	padding: 6px;
+	margin-right: 4px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: black;
+}
+
+#pagina__atual {
+	text-decoration: none;
+	background-color: rgb(255, 244, 110);
+	color: darkgrey;
+}
+
+.links__div a:hover {
+	color: white;
+	background-color: black;
+	transition: .5s;
+}
+
 main {
  flex-direction: row;
  flex-grow: 1;
- background-color: aqua;
+ background-color: rgb(209, 228, 137);
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+.imagem__div__main {
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.imagem__div__main img {
+	height: 350px;
+	padding: 40px;
+}
+
+.txt__div__main {
+	flex-grow: 1;
+	padding: 40px;
+}
+
+.conteudo__main {
+	padding: 40px;
 }
 
 footer {
-	background-color: yellowgreen;
+	background-color: rgb(255, 244, 98);
 	text-align: left;
 }
